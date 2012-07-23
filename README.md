@@ -1,4 +1,4 @@
 s3db
 ====
 
-A nodejs lib which uses Amazon S3 as a simple database.
+A javascript lib created for Node.js, which allows simple data operations on Amazon S3 service.
