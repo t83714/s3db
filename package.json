@@ -1,5 +1,6 @@
 {
   "author": "Jacky Jiang <t83714@gmail.com>",
+  "homepage": "https://github.com/t83714/s3db",
   "name": "s3db",
   "description": "A node.js module allows you easily maintain simple data structure on Amazon S3 service",
   "version": "0.0.1",
@@ -14,5 +15,8 @@
   	"aws2js" : "0.6.21",
   	"q" : "0.8.5"
   },
-  "devDependencies": {}
+  "repository": {
+		"type": "git",
+		"url": "git://github.com/t83714/s3db.git"
+  }
 }
