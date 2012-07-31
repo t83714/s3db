@@ -1,7 +1,7 @@
 {
-  "author": "Jacky Jiang <hostaworld@gmail.com>",
+  "author": "Jacky Jiang <t83714@gmail.com>",
   "name": "s3db",
-  "description": "Using amazon S3 service as a simple database",
+  "description": "A node.js module allows you easily maintain simple data structure on Amazon S3 service",
   "version": "0.0.1",
   "main": "./lib/s3db.js",
   "engines": {
