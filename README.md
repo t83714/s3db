@@ -94,14 +94,26 @@ Along with callback style API, `Promise` stlyle asynchronous programming pattern
 
 
 ```javascript
+
+kl.get() //---get full key list
+.then(kl.del) //-- del all key returned by kl.get()
+.then(kl.get) //-- fetch key list again
+.then(function(r){
+	console.log(obj); //--- will print out: []
+})fail(function(error){
+	console.log(error); //--- print out error during the whole process
+});
+
+```
+
+```javascript
 //---Load underscore library for function bind
 var _=require('underscore');
 
 //--- store an object / hash under key 'mykey'
 var obj={a:1,b:2};
 
-odb.put('mykey',obj).then(_.bind(odb.get,
-								 odb, //---make sure get method is bound to odb object when is called
+odb.put('mykey',obj).then(_.partial(odb.get,
 								 'mykey' //--- paramter for get method
 )).then(function(obj){
 	console.log(obj); //--- will print out: {a:1,b:2}
