@@ -3,7 +3,7 @@
   "homepage": "https://github.com/t83714/s3db",
   "name": "s3db",
   "description": "A node.js module allows you easily maintain simple data structure on Amazon S3 service",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./lib/s3db.js",
   "engines": {
     "node": ">=0.4.10"

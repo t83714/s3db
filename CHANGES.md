@@ -1,3 +1,7 @@
+## 0.0.3
+
+ - fix: KeyList does not set next_marker properly when delimiter is set to '' or null
+ 
 ## 0.0.2
 
  - Now all methods (Object.get,KeyList.get etc...) are always bound to orginal object
